@@ -7,6 +7,7 @@ const firstCard = document.querySelector('[data-event="talk"]');
 const labStatus = document.querySelector("#lab-status");
 const eventName = "Город в деталях";
 let clickCount = 0;
+const detailsTitle = document.querySelector("#details-title");
 // 01. Уберите /* и */ вокруг обработчика, сохраните файл и нажмите
 // первую карточку. Потом переходите к заданию 02 в TASKS.md.
 
@@ -17,6 +18,7 @@ firstCard.addEventListener("click", () => {
   } else {
     labStatus.textContent = `Повторное открытие: ${eventName}`;
   }
+  detailsTitle.textContent = eventName;
 });
 
 
